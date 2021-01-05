@@ -277,6 +277,10 @@ h3
 
 /* Hébergements */ 
 
+#ancre-hebergements 
+{
+	background-color: #F2F2F2;
+}
 #ancre-hebergements article 
 {
     padding: 5px;
