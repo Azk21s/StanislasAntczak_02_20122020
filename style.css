@@ -45,11 +45,6 @@ article
 	max-width: 650px;
 	margin: 0 auto;
 }
-article:hover
-{
-	-webkit-transform:scale(1.02); 
-    -moz-transform:scale(1.02); 
-}
 p 
 {
     font-size: 0.95em;
@@ -68,7 +63,7 @@ header {
     min-width: 320px;
 }
 
-#logo {
+.logo {
     width: 110px;
     padding: 15px;
 }
@@ -131,13 +126,13 @@ header li:hover {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-#section-recherche input[type=text] 
+#search 
 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     color: black;
     border: none;
-    width: 55%;
+    max-width: 200px;
 }
 
 /* Filtres */ 
@@ -344,6 +339,7 @@ h3
 
 footer 
 {
+	max-width: 1130px;
 	min-width: 320px;
 	padding: 22px;
 	background-color: #F2F2F2;

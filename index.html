@@ -8,7 +8,7 @@
 	
 	<script src="https://kit.fontawesome.com/f7f6384f69.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
  	<title>Reservia</title>
 <link rel="stylesheet" type="text/css" href="tools.css">
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,9 +18,9 @@
 <body>
  	<!-- début du header -->
 
- 	<header class="display-flex flex-d-column"> 
- 		<nav class="display-flex flex-100">
+ 	<header class="display-flex flex-d-column"> 	
  	<img class="logo" src="images/logo/Reservia.svg" alt="logo reservia">
+ 	    <nav class="display-flex flex-100">
             <ul class="display-flex flex-100 just-around">
                 <li><a href="#ancre-hebergements">Hébergements</a></li>
                 <li><a href="#ancre-activites">Activités</a></li> 
@@ -40,11 +40,12 @@
  		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
  		<p>En plein centre ville ou en pleine nature</p>
  		<form class="display-flex" action="#" method="post">
- 			<div><i class="fas fa-map-marker-alt"></i></div>
+ 			<span><i class="fas fa-map-marker-alt"></i></span>
  			<label class="display-none" for="search">Recherche</label>
  			<input type="text" id="search" name="recherche_par_ville" placeholder="Marseille, France">
- 			
- 			<button class="search-bar-btn">Rechercher</button>
+ 		<button> <i class="fas fa-search"></i>
+ 			<span class="display-none"> Rechercher </span>
+ 		</button>
  		</form>
  	</section>
  	<!-- fin recherche -->	
