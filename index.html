@@ -4,26 +4,29 @@
   <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="stylesheet" type="text/css" href="tools.css">
+	
+	
 	<script src="https://kit.fontawesome.com/f7f6384f69.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
  	<title>Reservia</title>
+<link rel="stylesheet" type="text/css" href="tools.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
 <body>
  	<!-- début du header -->
 
- 	<header class="display-flex flex-d-column"> 
- 		<a href="#"><img class="logo" src="images/logo/Reservia.svg" alt="logo reservia"></a>
- 		 <nav class="display-flex flex-100">
-            <ul class="display-flex just-around flex-100">
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li> 
-                <li id="inscription"><a href="#">S'inscrire</a></li>
-            </ul>
-         </nav>
+ 	<header> 
+ 		<div class="container-header">
+ 	<img class="logo" src="images/logo/Reservia.svg" alt="logo reservia">
+            <ul>
+                <li><a href="#ancre-hebergements">Hébergements</a></li>
+                <li><a href="#ancre-activites">Activités</a></li> 
+            </ul>  
+                <a href="#"><strong>S'inscrire</strong></a>
+        </div>
  	</header>
 
  	<!-- fin du header -->
@@ -38,7 +41,7 @@
  		<p>En plein centre ville ou en pleine nature</p>
  		<form class="display-flex" action="#" method="post">
  			<div><i class="fas fa-map-marker-alt"></i></div>
- 			<label class="display-none" for="recherche">Recherche</label>
+ 			<label class="display-none" for="search">Recherche</label>
  			<input type="text" id="search" name="recherche_par_ville" placeholder="Marseille, France">
  			<button class="search-bar-btn-mobile"><i class="fas fa-search"></i></button>
  			<button class="display-none search-bar-btn">Rechercher</button>
@@ -60,8 +63,11 @@
  	<!--fin filtres-->
 
  	<!-- Début les + populaires -->
-    <section class="display-flex flex-d-column" id="populaires">
+
+    <section class="display-flex" id="conteneur-heb">
+    <div class="populaires">
         <div class="display-flex just-between">
+        	
            <h2>Les plus populaires</h2>
             <i class="fas fa-chart-line"></i>
         </div>
@@ -118,17 +124,20 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
+
                     </a>
                 </article>
-            </div>
-        </section>
+            </div> </div>
+
+       
  	<!-- Fin les + populaires -->
 <br>
+
  	<!-- début hébergements -->
- 	<section id="ancre-hebergements" class="#">
+ 	<div id="ancre-hebergements" class="#">
  	<h2>Hébergement à Marseille</h2>
  	<div class="diplay-flex flex-d-column margin-0-auto" id="container-heb">
- 	<article>
+ 	<article class="heb1">
       <a href="#">
         <img src="images/hebergements/Auberge-de-la-cannebiere.jpg" alt="Auberge de la Cannebière">
         <H3>Auberge de la Cannebière</H3>
@@ -144,7 +153,7 @@
      
  	
  		
- 	<article>
+ 	<article class="heb2">
       <a href="#">
         <img src="images/hebergements/Hotel-du-port.jpg" alt="Hôtel du port">
         <H3>Hôtel du port</H3>
@@ -159,7 +168,7 @@
       </a></article>
 
  	
- 	<article>
+ 	<article class="heb3">
       <a href="#">
         <img src="images/hebergements/Hotel-les-mouettes.jpg" alt="Hôtel les mouettes">
         <H3>Hôtel les mouettes</H3>
@@ -174,7 +183,7 @@
       </a></article>
 
  	
- 	<article>
+ 	<article class="heb4">
       <a href="#">
         <img src="images/hebergements/Hotel-de-la-mer.jpg" alt="Hôtel de la mer">
         <H3>Hôtel de la mer</H3>
@@ -189,7 +198,7 @@
       </a></article>
 
  	
- 	<article>
+ 	<article class="heb5">
       <a href="#">
         <img src="images/hebergements/Auberge-le-panier.jpg" alt="Auberge le Panier">
         <H3>Auberge le Panier</H3>
@@ -204,7 +213,7 @@
  	    </a></article>
 
  	
- 	<article>
+ 	<article class="heb6">
       <a href="#">
         <img src="images/hebergements/Hotel-chez-amina.jpg" alt="Hôtel chez Amina">
         <H3>Hôtel chez Amina</H3>
@@ -217,9 +226,12 @@
         <i class="fas notations-active fa-star"></i>
  	</div>  
  	  </a></article>
- 	
+
+ 	</div>
  	<a href="#" id="af+">Afficher plus</a>
- </section>
+ </div>
+
+</section>
  	<!--fin hébergements -->
 
  	<!-- début activités -->
