@@ -11,29 +11,29 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
  	<title>Reservia</title>
 <link rel="stylesheet" type="text/css" href="tools.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="responsive.css">
-<link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
 <body>
  	<!-- début du header -->
 
- 	<header> 
- 		<div class="container-header">
+ 	<header class="display-flex flex-d-column"> 
+ 		<nav class="display-flex flex-100">
  	<img class="logo" src="images/logo/Reservia.svg" alt="logo reservia">
-            <ul>
+            <ul class="display-flex flex-100 just-around">
                 <li><a href="#ancre-hebergements">Hébergements</a></li>
                 <li><a href="#ancre-activites">Activités</a></li> 
-            </ul>  
-                <a href="#"><strong>S'inscrire</strong></a>
-        </div>
+                <li id="inscription"><a href="#">S'inscrire</a></li>
+        	</ul>
+        </nav>
  	</header>
 
  	<!-- fin du header -->
 
 <!-- début MAIN  -->
 
- 	<main class="flex-100">
+ 	<main>
 
  	<!-- recherche -->	
  	<section id="section-recherche">	
@@ -43,8 +43,8 @@
  			<div><i class="fas fa-map-marker-alt"></i></div>
  			<label class="display-none" for="search">Recherche</label>
  			<input type="text" id="search" name="recherche_par_ville" placeholder="Marseille, France">
- 			<button class="search-bar-btn-mobile"><i class="fas fa-search"></i></button>
- 			<button class="display-none search-bar-btn">Rechercher</button>
+ 			
+ 			<button class="search-bar-btn">Rechercher</button>
  		</form>
  	</section>
  	<!-- fin recherche -->	
@@ -64,7 +64,7 @@
 
  	<!-- Début les + populaires -->
 
-    <section class="display-flex" id="conteneur-heb">
+    <section class="display-flex flex-d-column" id="conteneur-heb">
     <div class="populaires">
         <div class="display-flex just-between">
         	
@@ -128,13 +128,14 @@
                     </a>
                 </article>
             </div> </div>
+        </section>
 
        
  	<!-- Fin les + populaires -->
 <br>
 
  	<!-- début hébergements -->
- 	<div id="ancre-hebergements" class="#">
+ 	<section id="ancre-hebergements" class="#">
  	<h2>Hébergement à Marseille</h2>
  	<div class="diplay-flex flex-d-column margin-0-auto" id="container-heb">
  	<article class="heb1">
@@ -228,8 +229,8 @@
  	  </a></article>
 
  	</div>
- 	<a href="#" id="af+">Afficher plus</a>
- </div>
+ 	<a href="#" id="AFplus">Afficher plus</a>
+
 
 </section>
  	<!--fin hébergements -->
