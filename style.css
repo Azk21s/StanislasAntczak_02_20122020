@@ -1,8 +1,62 @@
+/* Fonctions de mise en page - colonne vertébrale */
+
+.display-flex 
+{
+    display: flex; 
+}
+.flex-d-column 
+{
+    flex-direction: column;
+}
+.flex-100 
+{
+    flex: 0 0 100%;
+}
+.margin-0-auto 
+{
+    margin: 0 auto;
+}
+.just-around 
+{
+    justify-content: space-around;
+}
+.just-between 
+{
+    justify-content: space-between;
+}
+.display-none 
+{
+    display: none; 
+}
+.flex-wrap 
+{
+    flex-wrap: wrap;
+}
+.flex-Drow 
+{
+    flex-direction: row;
+}
+.notations-active 
+{
+    color: #0065FC !important;
+}
+.price {
+    font-weight: bold;
+}
+
+article:hover
+{
+    transform: scale(1.02);
+}
+
+/* Mise en forme générale du corps de la page */
+
 body 
 {
 font-family: 'Raleway', sans-serif;
-font-size: 18px;
-min-width: 320px;
+font-size: 17px;
+min-width: 240px;
+margin: auto 0;
 }
 a 
 {
@@ -75,9 +129,9 @@ header
     top: 20px;
     right: 3px;
     font-weight: bold;
-    color: #0065FC;
     width: 30%;
     padding: 15px 0;
+    color: #0065FC;
     border: none;
 }
 #inscription a 
@@ -85,9 +139,9 @@ header
     color: #0065FC;;
 }
 header li {
+	display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -190,8 +244,7 @@ header li:hover {
     margin-top: 20px;
 }
 
-/*Les + Populaires */ 
-
+/* Les + Populaires */ 
 
 #section-pop 
 {
@@ -205,35 +258,35 @@ header li:hover {
 }
 #section-pop a 
 {
+	flex: 0 0 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    flex: 0 0 100%;
+            flex-direction: row;    
 }
 #articles-pop img 
 
 {
     flex: 0 0 40%;
     min-height: 150px;
-    max-height: 170px;
+    max-height: 100%;
     width: 150px;
+    max-width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 #section-pop article 
 {
-
-    -webkit-box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
-            box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
-    background-color: white;
-    padding: 5px;
+	background-color: white;
+	padding: 5px;
     border-radius: 20px;
     margin: 10px 0;
+    -webkit-box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
+            box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);   
 }
 .articles-populaires 
 {
@@ -283,6 +336,7 @@ h3
 #ancre-hebergements h3, p,.note 
 {
     padding: 6px 0 5px 10px;
+
 }
 #AFplus 
 {
@@ -292,7 +346,7 @@ h3
     margin: 20px 0 30px 0;
 }
 
-/* Activites */
+/* Activités */
 
 #ancre-activites article 
 {
@@ -306,8 +360,7 @@ h3
     width: 100%;
     max-height: 125px;
     max-width: 360px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -326,14 +379,14 @@ h3
 
 /* Footer */
 
-
 footer 
 {	
 	min-width: 320px;
+	display: flex;
+	flex-direction: column;
 	padding: 21px;
 	background-color: #F2F2F2;
 }
-
 footer h3 
 {
     margin: 20px 0;
@@ -353,12 +406,9 @@ footer li
 
  		/* !!!!! -  MEDIAS QUERIES -  !!!!! */
 
-
-
-
 @media screen and (min-width: 576px) 
 {
-    
+
     #ancre-hebergements article 
     {
         max-width: 450px;
@@ -526,6 +576,10 @@ footer li
         margin-top: 30px;
         margin-bottom: 20px;
     }
+    #ancre-activites h3
+    {
+    	float: left;
+    }
     #container-activities-articles 
     {
         display: grid;
@@ -564,19 +618,29 @@ footer li
         grid-column: 4;
         grid-row: 2 / 4;
     } 
-    #ancre-activites img {
+    #ancre-activites img 
+    {
         min-width: 240px;
     }
-    #ancre-activites article {
+    #ancre-activites article 
+    {
         margin: 0px;
         min-width: 240px;
         max-height: 650px;
     } 
-    .hight-images-activities {
+    .Grande 
+    {
         min-height: 490px;
     }
-    .medium-images-activities {
+    .Moyenne 
+    {
         min-height: 300px;
     }
+    .Normale
+    {
+    	max-height: 45%;
+    }
+
+
 
 }
