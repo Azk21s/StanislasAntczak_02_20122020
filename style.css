@@ -113,10 +113,7 @@ input:focus
 {
 	outline: none;
 }
-footer
-{
-	min-width: 100%;
-}
+
 }
    
 /* header */
@@ -393,7 +390,6 @@ h3
 
 footer 
 {	
-	
 	display: flex;
 	flex-direction: column;
 	padding: 21px;
