@@ -66,7 +66,8 @@ header
 {
 
 	margin: 0 auto;
-	width: 90%;
+	max-width: 1130px;
+
 
 }
 main
@@ -145,11 +146,7 @@ header
 header li 
 {
 	display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     width: 50%;
     padding: 15px;
     border-bottom: solid 3px #F2F2F2;
@@ -238,10 +235,13 @@ header li:hover
     position: relative;
     bottom: 2px;
 }
-#Filtre h3 
+#Filtre h2 
 {
-    padding-top: 23px;
+    padding-top: 25px;
     margin-right: 10px;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 #Filtre .fa-child 
 {
@@ -268,13 +268,8 @@ header li:hover
 #section-pop a 
 {
 	flex: 0 0 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;    
+    flex-direction: row;    
 }
 #articles-pop img 
 {
@@ -293,21 +288,13 @@ header li:hover
 	padding: 5px;
     border-radius: 20px;
     margin: 10px 0;
-    -webkit-box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
-            box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);   
+  	box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);   
 }
 .articles-populaires 
 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 5px;
 }
 .articles-populaires 
@@ -330,15 +317,14 @@ h3
     padding: 5px;
     border-radius: 20px;
     margin: 15px 0;
-    -webkit-box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
-            box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
+    box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
 }
 #ancre-hebergements img 
 {
     width: 100%;
     max-height: 125px;
     min-width: 50px;
-       object-fit: cover;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -361,8 +347,7 @@ h3
 {
     border-radius: 20px;
     margin: 15px 0;
-    -webkit-box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
-            box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
+    box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
 }
 #ancre-activites img 
 {
