@@ -113,7 +113,6 @@ input:focus
 	outline: none;
 }
 
-}
    
 /* header */
 
@@ -394,6 +393,7 @@ footer
 	flex-direction: column;
 	padding: 21px;
 	background-color: #F2F2F2;
+	margin: 0 auto;
 }
 footer h3 
 {
@@ -422,12 +422,12 @@ footer li
     #ancre-hebergements article 
     {
         max-width: 450px;
-        margin: 20px;
+
     }
     #ancre-activites article 
     {
         max-width: 450px;
-        margin: 20px;
+
     }
     #section-recherche .fa-search 
     {
@@ -447,6 +447,12 @@ footer li
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: 0 auto;
+    }
+    #container-heb
+    {
+    	margin: 0 auto;
+    	width: 50%;
     }
 }
 @media screen and (min-width: 768px) 
@@ -461,11 +467,6 @@ footer li
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-    #container-heb
-    {
-    	margin: 0 auto;
-    	width: 50%;
     }
 }
 @media screen and (min-width: 992px) 
@@ -606,7 +607,7 @@ footer li
     {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat (3, 170px);
+        grid-template-rows: auto;
         grid-column-gap: 25px;
         grid-row-gap: 20px;
     }
