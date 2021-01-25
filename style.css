@@ -1,4 +1,4 @@
-/* Fonctions de mise en page - colonne vertébrale */
+/* Fonctions de mise en page / colonne vertébrale */
 
 .display-flex 
 {
@@ -66,7 +66,6 @@ header
 {
 
 	margin: 0 auto;
-	width: 90%;
 
 }
 main
@@ -120,7 +119,7 @@ input:focus
 
 header 
 {
-    flex: 0 0 100%;
+    flex: 1;
 }
 
 .logo 
@@ -259,6 +258,7 @@ header li:hover
 {
     background-color: #F2F2F2;
     border-radius: 20px;
+
 }
 #section-pop .fa-chart-line 
 {
@@ -417,7 +417,7 @@ footer li
     header li
     {
     	margin: 0 auto;
-    	width: 50%;
+
     }
     #ancre-hebergements article 
     {
